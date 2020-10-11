@@ -1,22 +1,29 @@
 
 .nav {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 13px;
+    text-align: right;
+    position: relative;
 }
 
 body {
     color: black;
+    font-family: arial, sans-serif;
 }
-
-
 
 .toplinks {
-    display: block;
-    align-items: center;
+    padding-right: 30px;
 }
+
 center {
     display: block;
     text-align: -webkit-center;
 }
+
 #mainLogo {
     display: block;
     justify-items: center;
@@ -25,4 +32,9 @@ center {
 .searchbar {
     display: block;
 
+}
+
+#translate {
+    width: 100%;
+    text-align: center;
 }
