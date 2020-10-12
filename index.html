@@ -10,21 +10,34 @@
     <title>Google</title>
 </head>
 <body>
-    <div class="nav">   <a class="toplinks" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a> 
-            <a class="toplinks" href="https://www.google.ie/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a>
-            <a class="toplinks" href="https://www.google.ie/intl/en/about/products?tab=wh">Google Apps</a> 
-            <a class="toplinks" href="mail.google.com">Gmail</a> 
+    <div id="nav">   
+        <div></div>
+        <a class="toplinks" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox" id="gmail">Gmail</a> 
+        <a class="toplinks" href="https://www.google.ie/imghp?hl=en&tab=wi&authuser=0&ogbl" id="image">Images</a>
+        <a class="toplinks" href="https://www.google.ie/intl/en/about/products?tab=wh" id="app"><img src="/Images/appLogo.png"</a> 
+        <a class="toplinks" href="mail.google.com"><img id="user" src="/Images/User.png"></a> 
     </div>
-    <center>
-        <div id="mainLogo">
-            <img src="/Images/googleMain.png" alt="Main Logo">
-        </div>
-        <div class="searchbar"><input type="text"></div>
-        <div class="buttons"><button>Google Search</button><button>I'm Feeling Lucky</button></div>
-    </center>
-    
-    <div id="translate"> Google offered in: <a href="https://www.google.com/setprefs?sig=0_rxUsxwr4EA8GimnGvXThzF1sVeA%3D&hl=ga&source=homepage&sa=X&ved=0ahUKEwinjevG0q3sAhW3QRUIHVH1AscQ2ZgBCA8">Gaeilge</a> 
-    </div>
+    <div id="main">
+        <div id="body">
+            <div id="mainLogo">
+                <img src="/Images/googleMain.png" alt="Main Logo" id="bigG">
+            </div>
+            <div id="searchbar"><input type="text" id="entry"></div>
+            <div id="flexbox">
+                <button id="searchbutton"">Google Search</button> <button id="lucky">I'm Feeling Lucky</button>
+            </div>
+            <div id="translate"> Google offered in: <a href="https://www.google.com/setprefs?sig=0_rxUsxwr4EA8GimnGvXThzF1sVeA%3D&hl=ga&source=homepage&sa=X&ved=0ahUKEwinjevG0q3sAhW3QRUIHVH1AscQ2ZgBCA8">Gaeilge</a> </div>
+            </div>
 
+    <div id="footer">
+        <a href="#" id="advertising">Advertising</a>
+        <a href="#" id="business">Business</a>
+        <a href="#" id="about">About</a>
+        <a href="#" id="hsw">How Search Works</a>
+        <a href="#" id="privacy">Privacy</a>
+        <a href="#" id="terms">Terms</a>
+        <a href="#" id="settings">Settings</a>
+    </div>
+</div>
 </body>
 </html>

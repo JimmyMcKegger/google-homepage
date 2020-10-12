@@ -1,40 +1,150 @@
-
-.nav {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 13px;
-    text-align: right;
-    position: relative;
-}
-
 body {
-    color: black;
-    font-family: arial, sans-serif;
+height: 100%;
+width: 100%;
 }
 
-.toplinks {
+div {
+    width: auto;
+}
+/* nav bar */
+#nav {
+    display: grid;
+    grid-template-columns: 75% 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    ". gmail image app user";
     padding-right: 30px;
 }
 
-center {
-    display: block;
-    text-align: -webkit-center;
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: arial;
+}
+
+#gmail {
+    grid-area: gmail;
+    
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+}
+
+#image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+
+#app {
+    grid-area: app;
+    justify-self: center;
+    align-self: center;
+}   
+
+#user {
+    grid-area: user;
+    justify-self: center;
+    align-self: center;
+    height: 32px;
+    width: 32px;
+}
+/* Main content */
+#body {
+    
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-areas: 
+    ". mainLogo ."
+    ". searchbar ."
+    ". flexbox ."
+    ". translate .";
 }
 
 #mainLogo {
-    display: block;
-    justify-items: center;
+    grid-area: mainLogo;
+    justify-self: center;
+    align-self: end;
+    justify-self: center;
+    align-self: end;
 }
-
-.searchbar {
-    display: block;
-
+#searchbar {
+    grid-area: searchbar;
+    height: 35px;
+}
+#entry {
+    background: #fff;
+    width: 100%;
+    align-self: end;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    flex-grow: 4;
+    justify-self: center;
+    align-self: center;
+}
+#searchbutton {
+    
+}
+#lucky {
+    
 }
 
 #translate {
-    width: 100%;
-    text-align: center;
+    grid-area: translate;
+    justify-self: center;
+}
+
+/* Footer */
+
+#footer {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 140px 1fr 80px  80px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advertising business about hsw . privacy terms settings";
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+#hsw {
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
 }
